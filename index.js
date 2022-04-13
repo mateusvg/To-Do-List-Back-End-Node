@@ -23,7 +23,7 @@ app.get('/todolist', function(req, res) {
     TodoModel.getTodoList(req, res)
 });
 
-app.post('/submitmessage', function(req, res) {
+app.post('/todolistsend', function(req, res) {
     if (!req.body) {
         console.log("No Requisition");
     } else {
