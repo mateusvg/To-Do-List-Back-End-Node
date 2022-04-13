@@ -25,9 +25,9 @@ app.get('/todolist', function(req, res) {
 
 app.post('/submitmessage', function(req, res) {
     if (!req.body) {
-        console.log("Sem requisição");
+        console.log("No Requisition");
     } else {
-        console.log("Corpo requisição enviada")
+        console.log("Req body send")
         TodoModel.insertTodoList(req, res)
     }
 });
